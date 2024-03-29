@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 2 - Practica 2</title>
+</head>
+
+<body>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+    <h1><ins>Tabla Basica</ins></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Legajo</th>
+                <th>Nombre Alumno</th>
+                <th>Apellido Alumno</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10</td>
+                <td>Cristian</td>
+                <td>Ninotti</td>
+                <td>cristianninotti03@gmail.com</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Nestor</td>
+                <td>Navarro</td>
+                <td>nnavarro@gmail.com</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>12</td>
+                <td>Franco</td>
+                <td>Perrota</td>
+                <td>fperrota@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <hr>
+
+    <h1><ins>Tabla Compleja</ins></h1>
+    <table>
+        <thead>
+            <th>Legajo</th>
+            <th colspan="2">Nombre y Apellido Alumno</th>
+            <th>Materia - UTN </th>
+            <th>Link de Campus</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10</td>
+                <td>Cristian</td>
+                <td>Ninotti</td>
+                <td>Laboratorio de Programacion II</td>
+                <td rowspan="4"><a href="https://frro.cvg.utn.edu.ar/" title="Campus UTN" target="_blank"
+                        alt="Campus UTN">Campus UTN</a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Nestor</td>
+                <td>Navarro</td>
+                <td>Programacion II</td>
+
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Franco</td>
+                <td>Perrota</td>
+                <td>Estadistica</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Emiliano</td>
+                <td>Martinez</td>
+                <td>Ingles II</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6"><b>Footer</b></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

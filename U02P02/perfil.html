@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+</head>
+
+<body>
+    <h1><ins>Datos personales</ins></h1>
+    <hr>
+    <h2>Completar Formulario:</h2>
+    <hr>
+    <fieldset>
+        <form action="/action.php" method="POST" target="_blank" alt="Formulario">
+            <label for="condicion">Condición:</label>
+            <input name="condicion" id="condicion" readonly type="text" value="ESTUDIANTE" size="25">
+            <br>
+            <br>
+            <label for="nombreCompleto">Nombre completo:</label>
+            <input name="nombreCompleto" id="nombreCompleto" type="text" maxlength="20" minlength="10" required size="18px"
+                placeholder="Ejemplo: Cristian Ninotti">
+            <br>
+            <br>
+            <label for="email">Email: </label>
+            <input name="email" id="email" type="email" maxlength="30" minlength="10" required size="29px"
+                placeholder="Ejemplo: cristianninotti03@gmail.com">
+            <br>
+            <br>
+            <label for="edad">Ingrese su edad:</label>
+            <input name="edad" id="edad" type="number" value="18" required>
+            <br>
+            <br>
+            <label for="nacionalidad">Nacionalidad: </label>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Peru">Peru</option>
+            </select>
+            <label for="condicionLaboral">Condición Laboral: </label>
+            <select name="condicionLaboral" id="condicionLaboral">
+                <option value="desempleado">Desempleado</option>
+                <option value="busquedalaboral">En búsqueda laboral</option>
+                <option value="parttime">Trabajo part time</option>
+                <option value="fulltime">Trabajo full time</option>
+            </select>
+            <br>
+            <br>
+            <label>Gustos Personales: Opcional</label>
+        <fieldset>
+            <br>
+            <label for="gustosMusicales">Gustos Musicales: </label>
+            <input name="gustosMusicales" id="gustosMusicales" type="text" maxlength="50" minlength="10" placeholder="Genero - Grupo Musical" size="24">
+            <br>
+            <br>
+            <label for="comidaFavorita">Comidas Favoritas: </label>
+            <select name="comidaFavorita" id="comidaFavorita">
+                <option value="">Selecione su comida favorita</option>
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="Tortilla">Tortilla</option>
+                <option value="CarnesPlancha">Carnes a la Plancha</option>
+                <option value="Ensaladas">Ensaladas</option>
+            </select>
+            <br>
+
+        </fieldset>
+        <br>
+        <label for="checkbox">Recuerdame</label>
+        <input name="checkbox" id="checkbox" type="checkbox" checked>
+
+        <button size="50px">
+            <label for="enviar">Enviar</label>
+        </button>
+
+
+        </form>
+    </fieldset>
+        
+    
+</body>
+
+</html>
