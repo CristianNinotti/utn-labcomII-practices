@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+<header>
+    <h1>Cadena de Restaurantes Gourmet "Los Ninotti"</h1>
+    <p>Bienvenidos al Restaurante Ninotti</p>
+    </header>
+    <div class="container">
+    <!-- Navegación / cotenedor izquierdo -->
+    <nav>
+    <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="multimedia.html">Multimedia</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+    </ul>
+    </nav>
+    <main>
+        <h2><ins>Hace tu reserva:</ins></h2>
+        <fieldset>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                    <label for="nombre"> <b>Nombre: </b></label> 
+                    </td>   
+                    <td> 
+                    <input name="nombre" id="nombre" type="text" maxlength="20" minlength="5" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for="email"><b>Email: </b></label>
+                    </td>
+                    <td>
+                    <input name="email" id="email" type="email" maxlength="40" minlength="5" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="edad"><b>Edad: </b></label>
+                    </td>
+                    <td>
+                        <input name="edad" id=edad type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comidaPreferido"><b>Menú del día: </b></label>
+                    </td>
+                    <td>
+                        <select name="comidaPreferido" id="comidaPreferido">
+                            <option selected value="">Seleccione su menu favorito</option>
+                            <option> Pastas con tuco </option>
+                            <option> Pastas con salsa Bolognesa</option>
+                            <option> Carne al horno con verduras </option>
+                            <option> Tortilla de papa </option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+            <br>
+            <label for="textarea"><b><ins>Nos importa su opinión: </ins></b></label>
+            <br>
+            <br>
+            <textarea name="textarea" id="textarea" rows="10" cols="60" placeholder="Escriba su comentario aqui"></textarea>
+            <label for="checkbox">¿Desea recibir novedades a su email?</label>
+            <input type="checkbox" name="checkbox" id="checkbox" checked>
+            <br>
+            <br>
+            <button>Enviar</button>
+        </form>
+    </fieldset>
+
+    </main>
+    <!-- Contenedor secundario / derecho -->
+    <div class="right">
+    <h2>Info</h2>
+    <p>Mas publicidades relacionadas a este Restaurante</p>
+    </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+    <p>© copyright <strong>Cristian Ninotti</strong></p>
+    <p><ins>Gracias por visitar mi sitio - Italia 1040 - Telefono: 3415155611</ins></p>
+    
+</body>
+</html>

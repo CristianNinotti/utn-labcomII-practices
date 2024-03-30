@@ -1,0 +1,73 @@
+<h1>Tipos de Linkear Css a Html</h1>
+
+Css Externo:
+<head>
+    <link rel="stylesheet" href="css./style.css">
+</head>
+Css Interno:
+<head>
+    <style>
+        h1{
+            color:red;
+            text-align: center;
+        }
+    </style>
+</head>
+Css en Linea:
+<h1 style="color: red; text-align: center;">TextoPrincipal</h1>
+
+<h1>Comentarios en linea</h1>
+// Comentario
+<h1>Comentarios en bloques</h1>
+/* Comentario */
+
+<h2>>Css Sintaxis:</h2>
+h1 {color:blue; font-size: 12px;}
+
+<h2>Css - Selectores:</h2>
+Selector Semantico:
+p {color:blue; font-size: 12px;}
+
+<h3>Selector Id:</h3>
+<div id="selector"></div>
+#selector {color:blue; font-size: 12px;}    
+
+<h3>Selector de Clase:</h3>
+<div class="selector"></div>
+.selector{color:blue; font-size: 12px;}   
+
+<h3>Selector Universal: (Aplica a todos los elementos)</h3>
+* {color:blue; font-size: 12px;}
+
+<h3>Seleccionar de varias elementos:</h3>
+h1,h2,h3 {color:blue; font-size: 12px;}
+
+<h3>Selector Descenciente:</h3>
+body, p, .ultimoParrafo {color:blue; font-size: 12px;}
+
+<h3>Selector >:</h3>
+div > a {color:red;}
+Cambiara el color de las anclas dentro del div unicamente (Hijos dentro del div)
+
+<h3>Selectores multiples:</h3>
+p {text-align:center; color:red;}
+p {color:gray;}
+Toma el alineamente y rojo - Luego lo cambia a color gris
+
+<h3>Jerarquia y especificidad de selectores</h3>
+*          =  0
+Semanticos =  1
+Clases    =  10
+Id        = 100
+En linea = 1000
+
+
+
+
+
+
+
+
+
+
+

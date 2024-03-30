@@ -1,0 +1,203 @@
+Html = Hyper Text Markup Language
+La estructura de la pagina
+
+<!DOCTYPE html>  Define el documento html
+<html> Elemento Raiz</html>
+
+<h3>Head</h3>
+
+<head>Contiene meta informacion sobre la pagina</head>
+<style Aqui se utiliza el style para definir dentro del documento html></style>
+<link href="Ruta de Hoja"> Para linkear a hoja Css o javascript
+<meta>Meta Datos</meta>
+<script Para utilizar javascript en documento html></script>
+
+<title>Titulo de la pagina</title>
+<body>Cuerpo de documento</body>
+<h1>Titulo y decrese hasta h6</h1>
+<p> Parrafo </p>
+<span></span>
+
+<h2>Selectores Tipos</h2>
+
+id  = #Nombre {}
+class = .Nombre {}
+o cualquiera de las anteriores, son etiquetas semanticas
+
+<h2>Propiedades para elementos de parrafo</h2>
+
+<br>Salto de Linea
+<hr>Dibuja una Linea
+<pre>Cursiva y pequeño</pre>
+<b>Negrita</b>
+<strong>NegritaConJerarquiaMotoresDeBusqueda</strong>
+<i>Italica o Cursiva</i>
+<em>Enfatizado</em>
+<mark>Marcado</mark>
+<small>TextoPequeño</small>
+<del>TextoEliminadoTachado</del>
+<ins>TextoSubrayado</ins>
+<sub>TextoDeSubindice</sub>
+<sup>TextoEnSuperindice</sup>
+
+
+<h2>Listas</h2>
+
+<ul>Listas desordenadas</ul>
+<ol>Listas ordenadas</ol>
+<li>Va dentro de cada lista por cada item</li>
+
+<h2>Links o Anclajes</h2>
+
+<a></a>
+_blank Para una nueva pagina
+_self Por defecto, abre sobre la misma
+<a href="Link" title="" alt="ParaGenteCiega" target="_blank">Para links</a>
+<h3>Links Predefinadas para email y telefono</h3>
+<a href="mailto:cristianninotti@gmail.com">Email</a>
+<a href="tel:+543415155611">Telefono</a>
+
+<h2>Links de imagenes</h2>
+
+_blank = Para una nueva pagina
+_self  = Por defecto, abre sobre la misma
+title  = Cuando se pasa el mouse por arriba, dice el title
+<img src="ubicacion" alt="ParaGenteCiega" target="_blank" title="NombreCuandoApoyoElMouseArriba">Para insertar una imagen
+Src = Obligatorio
+width y height = Para alterar su ancho y alto
+
+<h2>Tablas</h2>
+
+<tr>Table Row</tr>
+<td>Celdas</td>
+<th>Encabezado de tabla</th>
+<caption>Titulo de la tabla</caption>
+<colspan="2">La Cantidad de columnas que se expande</colspan>
+<rowspan="4">La Cantidad de filas que se expande</rowspan>
+
+<h2>Estructura Correcta De Tabla</h2>
+<thead>Representa la primera parte de la tabla</thead>
+<tbody>Todo el cuerpo de la tabla</tbody>
+<tfoot>El pie de la tabla</tfoot>
+
+Ejemplo:
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>NumeroDeTelefono</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Lionel Messi</td>
+            <td>Paris Saint Germain</td>
+            <td>79</td>
+        </tr>
+        <tr>
+            Se le adicionan mas datos a la tabla dentro de body, cada fila que deseamos
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Mas goles marcados: </td>
+            <td> 79 Goles</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<h2>Formularios</h2>
+
+<fieldset>Para encerrar el formulario en un recuadro o generar secciones dentro de el</fieldset>
+<form>Etique para cuerpo de formulario</form>
+<input>CampoDeEntradaDeDatos
+<label>Titulo de form anexado al input</label>
+<button>Boton</button>
+
+<h3>Un Formulario siempre tiene que tener</h3>
+<form action="/action.php" method="POST" target="_blank">Action para enviar los datos a ese destino, post para enviar los datos y blank nueva pag</form>
+Metodo post = enviar
+Metodo get  = recibe
+
+<h3>Estructura input</h3>
+
+<label for="MismoNombreQueInput">Tutulo del campo input</label>
+<input name="MismoNombreQueInput" id="MismoNombreQueInput" type="text">
+Type = Tipo de campo = Texto,Number,Tel,Email,Password,Date,Button,Submit
+<h3>Otras propiedades</h3>
+Value = Para darle un valor llenado por defecto
+Requerid = Campo requerido Obligatorio
+ReadOnly = De Solo Lectura, con un value predefinido
+PlaceHolder = Completado de instruccion a Usuairo
+Size = Tamaño
+MaxLength = Tamaño de caracteres maximo
+MinLength = Tamaño de caracteres minimos
+AutoComplete = Aclara si es un campo AutoCompletado
+Disabled = Campo desabilitado (No se envia al formulario un input con esta propiedad)
+Checkbox = Cajita para selecionar con una palomita o tilde 
+Radio = Circulo para selecionar opcion en punto
+
+<h3>Select en Formularios</h3>
+
+Es un menu desplegable
+<label for="Nombre"></label>
+<select name="Nombre" id="Nombre">
+    <option>1</option>
+    <option>2</option>
+</select>
+
+<h3>Text Area en Formularios</h3>
+<textarea id="comentario" name="comentario" rows="5" cols="30" placeholder="Escribe tu comentario aquí..." ></textarea>
+rows = para cantidad de filas
+columnas = cantidad de columnas
+
+<h2>Divs</h2>
+<div class="divisores">Divisores</div>
+en Hoja .divisores {Propiedades}
+<div id="divisores">Divisores</div>
+en Hoja Css #divisores {Propiedades}
+Directamente en el codigo de html <!--<style color="red">Hola</style>-->
+
+<h2>Comentarios</h2>
+
+<!--Comentario-->
+
+<h2>IFrames, para insertar imagenes o videos desde otros sitios</h2>
+
+<iframe>
+    <allow>Politica de caracteristicas de funcionamiento y seguridad</allow>
+    <allowfullscreen>Estable que el contenido puede mostrarse en pantalla completa</allowfullscreen>
+    <height>Alto</height>
+    <width>Ancho</width>
+    <src>Link de ruta</src>
+    <frameborder>Border</frameborder>
+</iframe>
+
+<h2>Audio</h2>
+
+<audio>Para agregar audio</audio>
+<audio controls autoplay> Atributo controls para darle controles al usuario - Atributo autoplay: Arranca automaticamente
+    Solo soporta estos 3 tipos HTML 5
+    <source src="musica.ogg" type="audio/ogg">
+    <source src="musica.wav" type="audio/wav">
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<h2>Picture</h2>
+
+<picture>
+    <scource media="(min-width:650px)" srcset=imgA.jpg>Imagen</scource>
+    <scource media="(min-width:650px)" srcset=imgA.jpg>Imagen</scource>
+    <img src="img_c.jpg alt=Estadio" alt="Estadio" style="width:auto;">
+</picture>
+
+<h2>Canvas</h2>
+
+<p>Utilizado para dibujar graficos a traves de secuencias de javascript</p>
+<canvas>
+    id="myCanvas"
+    width="200"
+    height="100"
+</canvas>
