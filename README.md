@@ -3,6 +3,6 @@
 <ul>
 <li>Practica 1 Finalizada</li>
 <li>Practica 2 Finalizada</li>
-<li>Practica 3 En proceso</li>
+<li>Practica 3 Finalizada</li>
 </ul>
 
