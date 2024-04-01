@@ -61,13 +61,194 @@ Clases    =  10
 Id        = 100
 En linea = 1000
 
+<h3>El estilo aplicará la ultima hoja linkeada si tiene la misma jerarquia y la misma especificidad</h3>
 
+<h3>Important</h3>
+!important - Anula las otras reglas y le da prioridad a esa.
+p{
+    background-color: red !important;
+} 
+#parrafo{
+    background-color: blue;
+}
 
+<h2>Box model</h2>
+content: Contenido interior de la caja
+padding: Linea por fuera al content
+border: Linea fuera del padding
+margin: fuera de border y capa final
 
+<h3>Margin</h3>
+Se utiliza para generar espacio por fuera dle Contenido
+<h2>Propiedades</h2>
+margin-top: espacio hacia arriba
+margin-right: espacio hacia la derecha
+margin-left: espacio hacia la izquierda
+margin-bottom: hacia abajo
+margin: 25px 50px 60px 30px  #Sentido de las agujas del reloj, arriba derecha abajo izquierda (Abreviatura)
+<h3>Pueden ser no solo de px</h3>
+auto: se calcula por margin
+longitud: em, px, rem
+porcentaje: %
 
+<h3>Padding</h3>
+padding-top: espacio hacia arriba
+padding-right: espacio hacia la derecha
+padding-left: espacio hacia la izquierda
+padding-bottom: hacia abajo
+<h3>Pueden ser no solo de px</h3> #Sentido de las agujas del reloj, arriba derecha abajo izquierda (Abreviatura)
+auto: se calcula por margin
+longitud: em, px, rem
+porcentaje: %
 
+<h3>Border</h3>
+border-top: espacio hacia arriba
+border-right: espacio hacia la derecha
+border-left: espacio hacia la izquierda
+border-bottom: hacia abajo
+<h3>Pueden ser no solo de px</h3> 
+auto: se calcula por margin
+longitud: em, px, rem
+porcentaje: %
+<h3>Propiedades adicionales de border</h3>
+border-color: border-color
+border-style: (dashed, solid, dotted, double, groove, inset, outset, none, hidden)
+border-width: #Sentido de las agujas del reloj, arriba derecha abajo izquierda (Abreviatura)
+border-radius: nos permite redondear las puntas
 
+<h2>Height - Width (Alto y ancho)</h2>
+Nos permite modificar el ancho y alto de un elementos
+<h3>Valores que puede tomar esta propiedad</h3>
+auto: es un valor predeterminado, el navegador calcula la altura y el ancho
+length: (Longitud) define alto/ancho en px, cm, etc
+%: define alto/ancho en porcentaje al bloque del Contenedor
+initial: establece alto/ancho en su valor predeterminado
+inherit: (heredar) alto/ancho se heredara el valor de su elemento padre.
+max-height/min-height: Alto maximo y minimo
+max-width/min-width: Ancho maxiximo y minimo
 
+<h2>Box-sizing</h2>
+Indica como se debe calcular el tamaño de un elemento (alto/ancho)
+Nos permite incluir o no el padding y el border en el acho total de un elemento
+<h3>Propiedades</h3>
+content-box: (por defecto) no incluyen el border ni el padding en el alto y ancho
+border-box: el border y el padding se incluyen dentro del alto y ancho
 
+<h2>Unidades y medidas - Absolutas</h2>
+Son fijas en relacion a otras.
+Unidad:      Nombre:               Equivale a
+cm           Centimetros           1cm= 96px/2,54
+mm           Milimetros            1mm= 1/10 de 1cm
+Q            Cuartos de milimetros 1Q= 1/40 de 1cm
+in           Pulgadas              1in= 2,54cm = 96px
+pc           Picas                 1pc= 1/16 de 1in
+pt           Puntos                1pt= 1/72 de 1in
+px           Pixeles               1px= 1/96 de 1in
 
+<h2>Css - unidades y medidas Relativas</h2>
+Son relativas en base a algo, ejemplo: tamaño de letra de un elemento TextoPrincipal
+Ventajas: puedes lograr el tamaño del texto u otros elementos escalen en relacion con todos
+Unidad:      Relativa a:
+em           Tamaño de letra padre
+rem          Tamoalo de la letra del elemento raiz
+vq           1% del ancho de la ventana grafica
+vh           1% de la altura de la ventana grafica
+vmin         1% de la dimension mas pequeña de la ventana grafica
+vmax         1% de la dim,ension mas grande de la ventana grafica
+%            Porcentaje en relacion del valro de la misma propiedad en el elemento padre
+
+<h2>Css-Texto</h2>
+<h3>Propiedades</h3>
+Estilos del tipo de letra
+Estilos de disposicion del texto
+<h3>Tipos de letra</h3>
+font-size: tamaño de la fuente (px,em,etc)
+font-style: estilo de la fuente (normal, italic, oblique)
+font-weight: ancho de la fuente (normal, bold)
+font-family: especifica el tipo de fuente(customizadas de google font)
+color: color de la fuente
+text-transform: (uppercase, lowercase, capitalize, none)
+text-decoration: (none, underline, overline, line-through)
+text-shadow: aplicar sombra a los textos, se especifican 4 valores (horizontal, vertical, desenfoque, color)
+<h3>Disposicion de texto</h3>
+Afectan al espaciado y otras caracteristicas relativas a la disposcion de texto
+(Espacio entre lineas, letras y  como se alinea el texto dentro del div)
+text-align: forma en que el texto se alinea dentro (left,right,center,justify)
+line-height: Interlineado (multiplicador de font-size)
+letter-spaccing: espacio entre letras (unidades de medida)
+word-spacing: espacio entre palabras
+
+<h2>Texto - Fuentes Customizadas</h2>
+Propiedad font-family
+Aplicar la fuente importada desde goole fonts a las propiedades de font-family
+Paso1: @import rul("Link de google fonts")
+Paso2: Aplicamos todo el link con el @import en hoja de estilo
+
+<h2>Iconos</h2>
+FontAwesome, podemos obtenerlos.
+Paso1: Dentro del head, cremaos un link con 1 stylesheet y href: con todo el linkl de font-awesome.
+Paso2: Agregar iconos en nuestro codigo <i class="nombre de la clase"></i> (Donde queres que se visualice)
+
+<h2>Unidades y colores</h2>
+palabra clave: red, blue, black
+Valores hexadecimales RGB: #0123DEF del 0 al F 
+Valores RGB Y RGBA: (R,G,B) del 0 a 255 (R,G,B,A) A = opacidad
+Valores HSL y HSLA: Colores relacion matriz (0 - 360) Saturacion con % - Luminosidad % - HSLA - A = opacidad
+
+<h2>Css - Listas</h2>
+Espaciado: tamois de texto, altos de linea margen y padding
+Estilos de lista: tipo de lista, posicion, imagen de viñeta
+
+list-style-type: tipo de viñetas cuadradas o circulares "para no ordenadas" / numeros, letras, numeros romanos "para ordenada"
+list-style-position: si aparecen dentro de los elementos de la lista o fuera (outside, inside)
+list-style-image: imagen personalizada para la viñeta en lugar de cuadrado o circular.
+
+<h2>Css - Links</h2>
+<h3>Pseudo clases</h3>
+Link: :link (defecto)
+Visited: :visited (Visitado)
+Hover: :hover(cuando se le pasa por arriba)
+Focus: :focus (estado del link)
+Active: :active (Cuando se le clickea)
+<h3>Propiedades de - Links</h3>
+color: color de link 
+cursor: estilo del cursor (cambia de flechita a manito)
+outline: similar a border pero no ocupa el tamañpo en el box model
+
+<h2>Css - Pseudo clases</h2>
+Se proceden por ":"
+Se utilizan para determinar que elemento o propiedad modifica cuando se acciona sobre un elemento
+Empty: Elementos que no tengas hijos :empty 
+p: empty{
+    display: none;
+}
+
+First-child: :first-child  selecciona el primer elemento hijo
+Last-child: :last-child seleciona el ultimo hijo
+Nth-child: :nth-child(N) indicar el determinado elemento hijo con la N (numero/indice) 
+:nth-child(2n): Pares 
+:nth-child(2n+1): Impares 
+:nth-child(5n): Salto de 5
+
+First-of-type: Primero de su tipo  :first-of-type
+Last-of-stype: Ultimo de su tipo   :last-of-type
+Nth-of-Type: Aplica con n          :nth-of-type(n)
+
+Link: Enlaces que no han sido visitados aun :link
+Visited: Enlaces que ya fueron visitados (clickeados) :visited
+a:link {color:darkblue;}
+a:visited {color:gray;}
+
+Focus: Puede ser entrada de datos de form, click o toca elemento o seleciona con tab :focus
+Hover: mouse arriba :hover 
+Active: cuando clickea :active 
+
+<h3>Pseudo Elementos</h3>
+Partes especificas de un elemento
+Son procedidos por "::"
+
+First-Letter: Crear regla para primera letra ::first-letter
+First-Line: Crear regla para primera linea ::first-line
+Before: Primer hijo del elemento ::before 
+After: Ultimo hijo del elemento ::after 
 
