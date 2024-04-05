@@ -7,7 +7,7 @@
 <li>Practica 4 Finalizada y Validada </li>
  </ul> 
 <h3>Validado con :</h3>
-<p>Html:  https://validator.w3.org/#validate_by_upload</p>   
-<p>Css:   https://jigsaw.w3.org/css-validator/validator</p>
+<p>Html:  https://validator.w3.org/</p>   
+<p>Css:   https://jigsaw.w3.org/css-validator/</p>
 
 
