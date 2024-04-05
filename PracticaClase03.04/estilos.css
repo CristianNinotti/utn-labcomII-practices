@@ -1,0 +1,21 @@
+.parrafo {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: red;
+}
+span {
+    color: green;
+}
+#text{
+    background-color: rebeccapurple;
+}
+
+.texto{
+    background-color: red;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+}

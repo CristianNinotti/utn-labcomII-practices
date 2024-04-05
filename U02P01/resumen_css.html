@@ -60,6 +60,7 @@ Semanticos =  1
 Clases    =  10
 Id        = 100
 En linea = 1000
+Important=99999999...
 
 <h3>El estilo aplicará la ultima hoja linkeada si tiene la misma jerarquia y la misma especificidad</h3>
 
@@ -243,7 +244,7 @@ Focus: Puede ser entrada de datos de form, click o toca elemento o seleciona con
 Hover: mouse arriba :hover 
 Active: cuando clickea :active 
 
-<h3>Pseudo Elementos</h3>
+<h2>Pseudo Elementos</h2>
 Partes especificas de un elemento
 Son procedidos por "::"
 
@@ -252,3 +253,213 @@ First-Line: Crear regla para primera linea ::first-line
 Before: Primer hijo del elemento ::before 
 After: Ultimo hijo del elemento ::after 
 
+<h2>Tablas</h2>
+Propiedades:
+border-spacing  (Genera espacio entre las columnas de la tabla)
+border-collapse (Elimina espacio entre las columnass de la tabla)
+border, padding, size, (Solo a los td, th) Nó recomienda a los Tr (Se ajusta por celdas)
+td,th {
+    border: 1px solid black;
+    padding: 0.5 rem;
+}
+
+<h2>Overflow</h2>
+Controla lo que sucede con el contenido que es demasiado grande para entrar en una area. 
+Propiedades:
+Visible: (Por Defecto) El desbordamiento es visible.
+Hidden: se oculta el desbordamiento 
+Scroll: el desbordamiento se oculta pero permite scrollear para verlo
+Auto: similar a scroll pero adiciona una barra de desplazamiento para scrollear
+
+<h2>Posicionamiento</h2>
+Position especifica como un elemento se posiciona en un documento.
+offset: top, right, bottom, left (Ubicacion final)
+position: static (Por defecto) no está posicionado
+position: relative - Se comporta igual que el static a menos que agregamos las offset causando un reajuste para adaptarse acvualquier hueco.
+position: absolute - se posiciona en relacion a su ancestro mas cercano, si no lo tiene, usará el body como ancestro.
+position: fixed - respecto a la ventana del navegador, se mantiene en el mismo lugar de la pagina donde estaba ubicado scrolleando inclusive.
+position: sticky - se posiciona segun la posicion de desplazamiento del usuario. Se "Pega" en su lugar de alcanzar una posicion determinada.
+
+<h3>Posicionamiento - z-index</h3>
+Con position y offset: 2 dimensiones.
+Z-index modifica la superposicion de los elementos.
+El elemento con valor z-index mas alto se mostrara adelante que los que tengan  menos valor.
+Valores: 0 a 10 - (Por defecto: 0)
+div1{
+    z-index: 1
+}
+div2{
+    z-index: 2
+}
+
+<h2>Display</h2>
+Propiedad: por defecto.
+display: block - display: inline
+display:block - Comienza con una nueva liunea y se estira hasta el 100% de su ancho (width padre) - <div><p><h1><header><footer>
+display:inline - No ocupan el 100% y si colocamos varios elementos en linea los pone un del lado de otro <span><img><i><a>
+display: none - Se oculta el elemento
+display: flex - Se comporta como 1 elemento de bloque, su contenido es flexbox. Ayuda a distribuir el espacio entre items y mejora la alineacion de los mismos en diferentes tamaños de la pantalla.
+display: grid - Se comporta como  1 elemento de bloque y su contenido es cuadricula. Podemos definir columnas y filas en nuestro diseño grid.
+Los modelos flex y grid es para tablas, con una flexibilidad mayor.
+
+<h2>Layouts floats</h2>
+Imagenes flotando envolviendo un texto. (Se usa mas flexbox y grid)
+
+<h2>FlexBox</h2>
+Caja flexible - Disposicion de elemntos en fila y columnas.
+display: flex (todos sus hijos se convierten en flexibles si se le asigna al padre)
+.conteiner {
+    display:flex;
+}
+.item {
+    padding: 20px;
+}
+
+<h3>FlexBox - FlexDirection </h3>
+flex-direction: colum (Apila verticalmente los elementos flex-items de arriba hacia abajo)
+flex-direction: colum-reverse (Apila verticalmente los flex-items de abajo hacia arriba)
+flex-direction: row (Apila los elementos horizontalmente de izquierda a derecha)
+flex-direction: row-reverse (Apila los elementos horizontales de derecha a izquierda)
+
+<h3>Flexbox - Flex-wrap </h3>
+Define si permanecen en una linea o pueden fluir en otras.
+flex-wrap: nowrap (Por defecto) Se mantienen en la misma Linea
+flex-wrap: wrap (Permite que se acomoden en varias lineas por el tamaño y tamaño de pantalla de dispositivo)
+flex-wrap: wrap-reverse (Igual que el anterior pero se acomodan de abajo derecha hacia arriba izquierda)
+
+<h3>Flexbox - Flexflow</h3>
+Permite establecer propiedades de flex-direction y flex-wrap al mismo tiempo
+flex-flow: row nowrap (Por defecto)
+flex-flow: row wrap (No los apila, los acomoda en base a la pantalla de dispositivo)
+
+<h3>Flexbox - Justify-Content</h3>
+Permite establecer como se destribuyen los item-flex en el elemento padre
+justify-content: flex-start (Por defecto) Ordena los items uno al lado de otro a la izquierda.
+justify-content: flex-end - Los alinea a la derecha
+justify-content: center - Al Centro. 
+justify-content: space-around - deja un espacio a los bordes y entre si.
+justify-content: space-between - distribuye los elementos en si, sin espacio entre bordes
+
+<h3>Flexbox - Align-Items</h3>
+Permite alinear verticalmente los items.
+align-items: center - Al medio del contenedor. 
+align-items: flex-start - En la parte superior izquierda.
+align-items: flex-end: En la parte inferior izquierda.
+align-items: stretch - Estira los elementos para rellenar el alto del contenedor.
+align-items: baseline: Alinea los elementos como sus lineas de base se alinean. (No entendi)
+
+<h3>Flexbox - Centrado perfecto</h3>
+Utilizar:
+.container{
+    display:flex;             Propiedad Flexible
+    align-items: center;      Vertical
+    justify-content: center;  Horizontal
+}
+
+<h3>FlexBox - Flex-Items</h3>
+flex-grow: Definimos cuando crecera un elemento en base a sus hermanos. Valor: 0 (Por defecto)
+div1{
+    flex-grow: 0;
+}
+div2{
+    flex-grow: 1;  (Mas grande)
+}
+flex-shirnk: Definimos cuando se encogerá un elemento a sus hermanos. Valor: 0 (Por defecto)
+flex-basis: Definimos especificar la longitual inicial de un flex-item. Valor: Se utilizane en px.
+flex: Nos permite combinar en una declaracion flwx-grow y flex-basis. 
+order: Nos permite cambiar el orden de un elemento particular. (El segundo al ultimo order: 1)
+align-self: Nos permite hacer un align-item pero de solo un elemento especifico. align-self: flex-end (Ejemplo)
+
+<h2>Grid</h2>
+Grid ofrece un sistema de diseñado basado en cuadriculas. Filas y columnas basicamente. Facilita el diseño para el posicionamiento.
+display: grid (Para convertir el contenedor en grilla)
+Una lista con 6 items
+.div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.div2{
+    item1
+    item2
+    Item3
+    ...
+}
+
+Los acomoda en 2 filas y 3 columnas los 6 items
+
+<h3>Grid - Componentes</h3>
+Columnas: grid columns: lineas verticales
+Filas: grid rows: lineas horizontales
+Espacios: grid gaps: espacios entre columnas y filas (Se puede ajustar con propiedad grid-gap)
+Lineas: grid lines: Son las lineas entre cada columna y filas. Referencia de cuanto ocupa cada elemento.
+Grid Area: Al mismo tiempo, podremos definir un área o junto de celdas y ubicarlas en nuestra grilla. (No entendi)
+
+<h3>Grid - Propiedades</h3>
+grid-template-columns: Define columnas en grilla y ancho.
+grid-template-rows: Define la altura de cada fila. El valor de las filas es definido por los items y las columnas de columns.
+Posibles propiedades para ambos templates:
+none: no hay cuadricula explicita
+absoluta: no negativa (10px, 2cm)
+relativa: no negativa (20%, 3rem)
+auto: Ocupa espacio de manera automatico, se distribuyen de mayera equitativa
+repeat(n, val): Establecer valores petidos, en n el valor de veces a repetir y el valor a repetir. repeat(6,auto) <-- Efectivo
+(Es lo mismo que auto auto auto auto auto.)
+
+grit-template-areas: Nos permite organizar los elementos por nombres.
+grid-template-areas:
+    header header header
+    main   main   aside
+    footer footer footer;
+grid-area: Nombre que le asignamos al area de nuestras grilla.
+Propiedades de area:
+none: no hay grid en areas definidas.
+nombre de grid area: nombre definido para el elemento hijo de grid area.
+. (punto): significa celda vacia.
+
+<h3>Grid - Propiedades - Grid - Items:</h3>
+grid-column-start: linea donde la columna comienza.
+grid-column-end: linea donde la columna termina.
+grid-column: propiedad abreviada para ambas anterior. Se colocan valores start y end [start]/[end] 
+grid-row-start: linea donde la columna comienza
+grid-row-end: linea donde columna termina
+grid-row: propiedad abreviada para ambas anterior. Se colocan valores start y end [start]/[end] 
+
+justify-self: alinea un grid item dentro de una celda a lo largo de la fila.
+Propiedades: stretch (Por defecto), start, end, center. 
+align-self: alinea un grid item dentro de una celdda a lo largo de la columna.
+Propiedades: stretch (Por defecto), start, end, center. 
+
+Practica Grid con este juego: https://cssgridgarden.com/#es
+
+<h2>FlexBox vs Grid</h2>
+Flexbox: 1 dimension. Para componentes.
+Grid: Multidimensiones. Para layouts.
+
+<h2>Media Queries</h2>
+Consultas de medio (En español) son para modificar tu pagina web o apps, en funcion al dispotivo con cual es ejecutado y ajustar su pantalla al mismo.
+(celular, tablet, pc escritorio), se puede modificar caracteristicas y propiedades de todos los elementos. Por lo general anchos y demas. Viewport.
+Verificar: 
+Ancho y alto de la ventana grafica.
+Ancho y alto del dispositivo.
+Orientacion (Por dispositivo, vertical u horizontal)
+Resolucion.
+Se resuelve por un verdadero y falso, cuando resulte verdadero se aplica Ejemplo:
+@media not|only mediatype and (expressions) {
+    CSS-CODE;
+}
+Tambien puede tener difentes hojas de esitlo pasra diferentes medios:
+<link rel="stylesheet" media="mediatype and|not|only(expressions)" href="priont.css">
+Mejor ejemplo:
+@media screen and (max-width: 480px){
+    h1 {
+        font-size: 25px;
+        color: brown;
+    }
+}
+Toda la pagina es normal hasta que se abre con un celular con maximo de 480px aplica esos efectos en este h1. 
+
+<h2>Css - Variables</h2>
+Almacenar valores de propiedades y utilizarlos cuantaws veces lo deseemos. Aclarar dentro de un selector.
+*Se utiliza :root para que la variablea sea global.
+*El nombre de la variable debe comenzar con " --  " (Dos guiones medios) --main--color: red (Tiene case senstive) (Se define)
+*Para llamarla o instanciarla se utiliza la palabra reservada "var" h1 {color: var(--main--color);} (Se usa) 
