@@ -1,0 +1,68 @@
+/* 1 */
+* {
+    font-family: sans-serif;
+}
+
+/* 12 */
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+/* 2 */
+h1 {
+    font-size: 24px;
+    color: #242424;
+    font-weight: 900;
+}
+
+/* 3 */
+
+h2 {
+    font-size: 20px;
+    color:#606060;
+    font-weight: 800;
+}
+
+/* 4 */ /* 7 */
+
+p {
+    font-size: 14px;
+    margin: 30px 0 30px 0;
+}
+
+/* 8 */ /*13 */
+
+ul {
+    margin-left: 100px;
+    padding: 20px;
+    border: solid blue 2px;
+    list-style: none;
+    max-width: 40%;
+}
+
+/* 5 */ /* 11 */ /* 14 */
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* 10 */
+
+.lista1, .linkverde{
+    color: green;
+}
+
+/* 6 */
+
+a {
+    color: orange;
+    text-decoration: underline; /* Ya viene por defecto */
+}
+
+
