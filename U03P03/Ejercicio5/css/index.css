@@ -1,0 +1,21 @@
+.padre {
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    min-height: 100vh;
+    gap: 10px;
+    height: 100%;
+}
+
+.sidebard {
+    background: rgba(193,219,210,1.00);
+    flex: 1;
+    padding: 12px 24px;
+}
+
+.content {
+    background: rgb(3, 97, 220);
+    flex: 4;
+    padding: 12px 24px;
+}
+

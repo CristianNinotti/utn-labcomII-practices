@@ -195,7 +195,7 @@ palabra clave: red, blue, black
 Valores hexadecimales RGB: #0123DEF del 0 al F 
 Valores RGB Y RGBA: (R,G,B) del 0 a 255 (R,G,B,A) A = opacidad 0 a 1  (0.5) Por ejemplo
 Valores HSL y HSLA: Colores relacion matriz (0 - 360) Saturacion con % - Luminosidad % - HSLA - A = opacidad
-#HSL y HSLA: Se usa en arduino o para programar leds.
+#HSL y HSLA: Se usa en arduino o para programar leds.z
 
 <h2>Css - Listas</h2>
 Espaciado: tamaños de texto, altos de linea margen y padding
@@ -207,10 +207,11 @@ list-style-image: imagen personalizada para la viñeta en lugar de cuadrado o ci
 
 <h2>Css - Links</h2>
 <h3>Pseudo clases</h3>
+p a:link{ Ejemplo; }
 Link: :link (defecto)
 Visited: :visited (Visitado)
 Hover: :hover(cuando se le pasa por arriba)
-Focus: :focus (estado del link)
+Focus: :focus (estado del link cuando uso tab)
 Active: :active (Cuando se le clickea)
 <h3>Propiedades de - Links</h3>
 color: color de link 
@@ -228,6 +229,7 @@ p: empty{
 First-child: :first-child  selecciona el primer elemento hijo
 Last-child: :last-child seleciona el ultimo hijo
 Nth-child: :nth-child(N) indicar el determinado elemento hijo con la N (numero/indice) 
+Nth-child: :nth-child(3) Al tercer hijo por ejemplo
 :nth-child(2n): Pares 
 :nth-child(2n+1): Impares 
 :nth-child(5n): Salto de 5
@@ -235,6 +237,9 @@ Nth-child: :nth-child(N) indicar el determinado elemento hijo con la N (numero/i
 First-of-type: Primero de su tipo  :first-of-type
 Last-of-stype: Ultimo de su tipo   :last-of-type
 Nth-of-Type: Aplica con n          :nth-of-type(n)
+
+Ejemplo:  article *:first-child (Le cambia a toda la etiqueta hija de article)
+Ejemplo:  article p:first-child (Le cambia al primer parrafo del article)
 
 Link: Enlaces que no han sido visitados aun :link
 Visited: Enlaces que ya fueron visitados (clickeados) :visited
@@ -287,9 +292,12 @@ Z-index modifica la superposicion de los elementos.
 El elemento con valor z-index mas alto se mostrara adelante que los que tengan  menos valor.
 Valores: 0 a 10 - (Por defecto: 0)
 div1{
-    z-index: 1
+    z-index: 0
 }
 div2{
+    z-index: 1
+}
+diiv4{
     z-index: 2
 }
 
@@ -319,7 +327,7 @@ display: flex (todos sus hijos se convierten en flexibles si se le asigna al pad
 <h3>FlexBox - FlexDirection </h3>
 flex-direction: colum (Apila verticalmente los elementos flex-items de arriba hacia abajo)
 flex-direction: colum-reverse (Apila verticalmente los flex-items de abajo hacia arriba)
-flex-direction: row (Apila los elementos horizontalmente de izquierda a derecha)
+flex-direction: row (Apila los elementos horizontalmente de izquierda a derecha) (POR DEFECTOI)
 flex-direction: row-reverse (Apila los elementos horizontales de derecha a izquierda)
 
 <h3>Flexbox - Flex-wrap </h3>
@@ -368,7 +376,7 @@ div2{
 flex-shirnk: Definimos cuando se encogerá un elemento a sus hermanos. Valor: 0 (Por defecto)
 flex-basis: Definimos especificar la longitual inicial de un flex-item. Valor: Se utilizane en px.
 flex: Nos permite combinar en una declaracion flwx-grow y flex-basis. 
-order: Nos permite cambiar el orden de un elemento particular. (El segundo al ultimo order: 1)
+order: Nos permite cambiar el orden de un elemento particular. (El segundo al ultimo order: 1) -1 para que aparezca primero -2 para que venga primero el nuevo -3 etc
 align-self: Nos permite hacer un align-item pero de solo un elemento especifico. align-self: flex-end (Ejemplo)
 
 <h2>Grid</h2>

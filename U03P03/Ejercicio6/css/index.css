@@ -1,0 +1,40 @@
+.contenedor{
+    display: flex;
+    align-items: row;
+    padding-inline-start: 0px;
+    height: 1000px;
+    gap: 2px;
+    font-family: sans-serif;
+}
+
+ul{
+    padding-inline-start: 0px;
+    padding: 20px;
+    margin: 0px;
+}
+
+li{
+    border-bottom: solid grey 1px;
+    list-style-type: none;
+    padding: 5px;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+.principal p {
+    padding: 20px;
+    margin: 0px;
+}
+
+.lateral{
+    background-color: rgba(215, 172, 153, 0.8);
+    flex: 1;
+}
+
+.principal{
+    background-color: salmon;
+    flex: 8;
+}

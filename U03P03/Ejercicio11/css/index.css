@@ -1,0 +1,44 @@
+
+body {
+    background-color: rgb(88,153,238);
+}
+
+ul {
+    list-style: none;
+    background-color: rgb(254,254, 254);
+    padding-inline-start: 0px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: flex-start;
+}
+
+.item {
+    display: flex;
+    background-color: lightgray;
+    gap: 25px;
+    padding: 10px;
+}
+
+.item img{
+    border-radius: 75px;
+}
+
+.imagen {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+h4, p {
+    margin: 10px;
+}

@@ -1,0 +1,92 @@
+.main {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 500px;
+    justify-content: space-between;
+    border: 5px solid rgb(151,93,233);
+    background-color: rgb(245, 245, 245);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+
+}
+
+.logo img{
+    width: 150px;
+    height:150px;
+}
+
+
+
+.lista  {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding: 0;
+    
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    padding-inline-start: 0px;
+}
+
+
+li img{
+    width: 25px;
+}
+
+.icono-mujer {
+    height: 30px;
+}
+
+li {
+    font-size: 30px;
+    padding: 5px;
+}
+
+li:hover{
+    color: rgb(151,93,233);
+    background-color: rgb(255,230,255);
+}
+
+li .item img:hover{
+    color: rgb(151,93,233);
+}
+
+img:hover{
+    color: rgb(151,93,233);
+}
+
+.usuario img{
+    border-radius: 50%;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.usuario img{
+    width: 30%;
+}
+
+.item {
+    padding: 10px;
+}
+
+.fa-house {
+    font-family: "Font Awesome 5 Free"
+}
+.fa-person-dress{
+    font-family: "Font Awesome 5 Free"
+}

@@ -1,0 +1,41 @@
+
+.contenedorPrincipal{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tarjeta {
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.5);
+    width: 600px;
+    height: 500px;
+    gap: 5px;
+    
+}
+
+.header {
+    display: flex;
+    background-color: black;
+    flex: 0;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.principal {
+    flex: 1;
+    padding-left:  10px;
+    font-size: 35px;
+
+}
+
+.footer {
+    display: flex;
+    flex:0;
+    justify-content: center;
+    background-color: grey;
+    color: aliceblue;
+}
+

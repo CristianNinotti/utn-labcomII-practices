@@ -1,0 +1,23 @@
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0;
+    list-style: none;
+    width: max-content;
+    align-items: flex-start;
+}
+
+ul li {
+    background-color: rgba(123,198,199,0.8);
+    width: 100%;
+    padding: 8px;
+    font-family: sans-serif;
+}
+
+ul a, ul a:link{
+    text-decoration: none;
+    color: black;
+    
+}
