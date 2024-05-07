@@ -1,0 +1,118 @@
+* {
+    font-family: Verdana;
+    color: rgb(71, 71, 71);
+    font-size: small;
+}
+
+.cabecera {
+    background-color: rgb(60, 66, 95);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture {
+    /* Redondear la imagen y darle un tamaño maximo de 200px */
+    align-content: center;
+    width: 200px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+.presentacion {
+    background-color: white;
+    margin: 2%;
+    color: rgb(92, 92, 92);
+    padding: 2%;
+    border-radius: 2em;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.datos-personales {
+    background: #d1d0d0;
+    padding: 1%;
+
+}
+
+.title {
+    font-weight: bold;
+}
+
+.contenido {
+    padding: 2em;
+}
+
+.date {
+    color: gray;
+    font-size: small;
+}
+
+h3 {
+    background-color: rgb(183, 176, 189);
+    padding: 2px;
+}
+
+.my-button {
+    padding: 10px 20px;
+    background-color: rgb(60, 66, 95);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.titulo-idiomas {
+    background-color: rgb(183, 176, 189);
+    padding: 3px;
+}
+
+.datos-titulo {
+    background-color: rgb(0, 128, 128);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.datos-personales {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+
+}
+
+.columna-izquierda {
+    background: rgb(230, 249, 238);
+    padding: 1%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    margin: 2.5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.columna-derecha {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 2.5px;
+    border-radius: 10px;
+}
+
+.datos {
+    background: rgb(242, 243, 244);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 15px;
+}

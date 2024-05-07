@@ -1,0 +1,12 @@
+.padre {
+    display: flex;
+    min-width: 100vh;
+    min-height: 50vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+fieldset{
+    display: flex;
+    height: 30%;
+}
