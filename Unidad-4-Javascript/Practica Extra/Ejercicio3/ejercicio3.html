@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <script src="ejercicio3.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="nombre">Nombre :</label>
+            </td>
+        </tr>
+        <tr>
+            <td> <input id="nombre" name="nombre" type="text"></td>
+
+        </tr>
+
+        <tr>
+
+            <td><label for="preguntas">Cantidad total de preguntas realizadas a el:</label> </td>
+        </tr>
+        <tr>
+            <td><input id="preguntas" name="preguntas" type="number"></td>
+        </tr>
+
+
+        <tr>
+
+            <td> <label for="preguntasCorrectas">Cantidad de preguntas contestadas correctamente:</label> </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="preguntasCorrectas" name="preguntasCorrectas" type="number">
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <button onclick="porcentaje();">Calcular</button>
+            </td>
+
+            <td>
+                <label for="resultado">Resultado</label>
+            </td>
+            <td>
+                <textarea id="resultado" readonly placeholder="Resultado" cols="15" rows="10"></textarea>
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
