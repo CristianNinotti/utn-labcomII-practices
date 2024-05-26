@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Ninotti - Form</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="javascript/script.js" defer></script>
+</head>
+
+<body>
+    <div class="formulario">
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" placeholder="Ingrese su nombre aqui" type="text" required> <!--No lo pide pero considero que deberia ser REQUERIDO tambien-->
+            <label for="email">E-mail:</label>
+            <input id="email" name="email" placeholder="Ingrese su email aqui" type="email" required>
+            <label for="subject">Subject:</label>
+            <input name="subject" id="subject" type="text" placeholder="Ingrese su asunto aqui" maxlength="50" required>
+            <label for="fecha-nacimiento">Fecha nacimiento:</label>
+            <input name="fecha-nacimiento" id="fecha-nacimiento" type="date" required>
+            <h2>Conocimientos:</h2>
+            <div class="checkbox">
+                <label for="word">Word</label>
+                <input id="word" type="checkbox" value="Word">
+                <label for="excell">Excell</label>
+                <input id="excell" type="checkbox" value="Excell">
+                <label for="jira">Jira</label>
+                <input id="jira" type="checkbox" value="Jira">
+                <label for="visual-studio">Visual Studio</label>
+                <input id="visual-studio" type="checkbox" value="Visual Studio">
+                <label for="oracle">Oracle</label>
+                <input id="oracle" type="checkbox" value="Oracle">
+                <label for="sql-server">SQL Server</label>
+                <input id="sql-server" type="checkbox" value="SQL Server">
+                <label for="ubuntu">uBuntu</label>
+                <input id="ubuntu" type="checkbox" value="uBuntu">
+                <label for="teams">Teams</label>
+                <input id="teams" type="checkbox" value="Teams">
+                <label for="seguridad-informatica">Seguridad informática</label>
+                <input id="seguridad-informatica" type="checkbox" value="Seguridad informática">
+                <label for="robotica">Robótica</label>
+                <input id="robotica" type="checkbox" value="Robótica">
+            </div>
+            <label for="remuneracion-pretendida">Remuneracion Pretendida</label>
+            <input id="remuneracion-pretendida" name="remuneracion-pretendida" type="number" required>
+            <label  for="tipo-relacion">Tipo de relación pretendida:</label>
+            <select onclick="cambioColorInput();" name="tipo-relacion" id="tipo-relacion">
+            <option value="" selected hidden disabled></option>
+            <option value="autonomo">Autónomo</option>
+            <option value="monotributista">Monotributista</option>
+            <option value="relacion-dependencia">Relación de Dependencia</option>
+            </select>
+            <br>
+            <label for="campo-texto">Mensaje:</label>
+            <textarea onblur="contadorCaracteres()" id="campo-texto" name="campo-texto" type="text" placeholder="Ingrese su mensaje aqui"
+                rows="10" required></textarea>
+            <div class="buttons">
+                <button class="enviar">Enviar</button>
+                <button class="volver" onclick="window.location.href='index.html'">Volver</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
